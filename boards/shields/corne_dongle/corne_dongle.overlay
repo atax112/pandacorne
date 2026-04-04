@@ -67,7 +67,7 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
     pinctrl-1 = <&i2c0_sleep>;
     pinctrl-names = "default", "sleep";
 
-    oled: sh1106@3c {
+oled: sh1106@3c {
         compatible = "sinowealth,sh1106";
         reg = <0x3c>;
         width = <128>;
@@ -78,9 +78,8 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
         multiplex-ratio = <63>;
         segment-remap;
         com-invdir;
-        inversion-on;
         prechargep = <0x22>;
-        };
+    };
 };
 
 &pinctrl {
