@@ -78,28 +78,28 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
 };
 &pro_micro_i2c {
     status = "okay";
+	pinctrl-0 = <&i2c0_default>;
+    pinctrl-1 = <&i2c0_sleep>;
+    pinctrl-names = "default", "sleep";
+    clock-frequency = <I2C_BITRATE_STANDARD>;
 
-   // oled: ssd1306@3c {
-   //     compatible = "solomon,ssd1306fb";
 	oled: sh1106@3c {
         compatible = "sinowealth,sh1106";
         reg = <0x3c>;
         width = <128>;
-       // height = <32>;
 		height = <64>;
-       // segment-offset = <0>;
 		segment-offset = <2>;
         page-offset = <0>;
         display-offset = <0>;
-       // multiplex-ratio = <31>;
 		multiplex-ratio = <63>;
         segment-remap;
-        com-invdir;
-        com-alternative;
+       // com-invdir;
+       // com-alternative;
        // inversion-on;
         prechargep = <0x22>;
     };
 };
+
 // rgb,SPI
 &pinctrl {
     spi3_default: spi3_default {
