@@ -19,14 +19,16 @@
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp LGUI
                   &kp LCTRL &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
+                display-name = "BASE";
                 };
                 lower_layer {
                         bindings = <
-   &trans    &kp N1    &kp N2   &kp N3    &kp N4    &kp N5     &kp N6    &kp N7    &kp N8    &kp N9   &kp N0   &kp BSPC
+   &kp TAB   &kp N1    &kp N2   &kp N3    &kp N4    &kp N5     &kp N6    &kp N7    &kp N8    &kp N9   &kp N0   &kp BSPC
    &trans    &kp GRAVE &kp LBKT &kp RBKT  &kp EQUAL &kp MINUS  &trans    &trans    &trans    &trans   &trans   &trans
    &kp LSHFT &kp PIPE  &kp RBRC &kp LBRC  &kp PLUS  &kp UNDER  &trans     &trans    &trans    &trans   &trans   &trans
                              &kp LCTRL &trans   &kp SPACE      &kp RET   &trans    &kp RALT
                         >;
+                display-name = "LOWER";
                 };
                 raise_layer {
                         bindings = <
@@ -35,6 +37,7 @@
    &trans    &trans    &trans   &trans   &trans    &trans      &trans    &trans    &trans    &trans  &trans  &trans
                              &kp LCTRL   &trans    &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
+                display-name = "RAISE";
                 };
         };
 };
