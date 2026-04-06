@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <layouts/foostan/corne/5column.dtsi>
 #include <layouts/foostan/corne/6column.dtsi>
+#include <zephyr/dt-bindings/i2c/i2c.h>
 
 &foostan_corne_6col_layout {
     transform = <&default_transform>;
@@ -79,6 +80,7 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
 
 &pro_micro_i2c {
     status = "okay";
+	clock-frequency = <I2C_BITRATE_FAST>;
     pinctrl-names = "default", "sleep";
 
 	oled: sh1106@3c {
