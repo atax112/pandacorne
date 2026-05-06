@@ -1,12 +1,14 @@
 if SHIELD_EYELASH_NUMPAD
 config ZMK_KEYBOARD_NAME
     default "Eyelash Numpad"
-config ZMK_SPLIT
+config ZMK_BLE
     default y
-config ZMK_SPLIT_ROLE_CENTRAL
+config ZMK_SPLIT
     default n
-config BT_MAX_CONN
-    default 2
-config BT_MAX_PAIRED
-    default 2
+#config ZMK_SPLIT_ROLE_CENTRAL
+#    default n
+#config BT_MAX_CONN
+#    default 2
+#config BT_MAX_PAIRED
+#    default 2
 endif
