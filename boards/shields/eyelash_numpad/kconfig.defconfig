@@ -1,0 +1,6 @@
+if SHIELD_EYELASH_NUMPAD
+config ZMK_KEYBOARD_NAME
+    default "Eyelash Numpad"
+config ZMK_BLE
+    default y
+endif
