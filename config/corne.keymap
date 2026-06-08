@@ -34,7 +34,8 @@
              *   bindings = <&macro_press &kp RALT>,
              *              <&macro_tap &kp P>,
              *              <&macro_release &kp RALT>;
-            };*/
+             *};
+             */
             umlaut_o: umlaut_o {
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
